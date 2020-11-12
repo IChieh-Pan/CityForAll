@@ -1,0 +1,175 @@
+
+.foreground{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+
+}
+.form-filed {
+    position: absolute;
+    z-index: 2;
+}
+/* body{
+    margin: 0px;
+    display: block;
+    font-family: "Consolas";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2rem;
+    color: rgb(36, 35, 35);
+} */
+label {
+    padding: 7px 20px;
+    border-radius: 14px;
+    line-height: 1.4;
+    color:#333;
+}
+.survey-list li:before{
+    position: absolute;
+    top: 50%;
+    left:0;
+    width:20px;
+    height: 20px;
+    -webkit-border-radius: 50%;
+   border-radius: 50%; 
+   margin-top: -10px;
+   text-align:center;
+   color: #ffc952;
+   background-color: #333;
+   content: counter;
+   counter-increment: section;
+}
+
+.header {
+    
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+.title {
+    font-size: 22px;
+}
+.survey-list li label {
+    color: #ffc952;
+    background-color: #333;
+}
+
+.form-field {
+    font-family: "Consolas";
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-weight: 400;
+    background-color: rgb(255, 255, 255, 0.6);
+    width: fit-content;
+    border-radius: 15px;
+    padding: 20px 20px;
+}
+
+textarea {
+    /* -webkit-writing-mode: horizontal-tb !important; */
+    text-rendering: auto;
+    color: black, white;
+    border-radius: 8px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textarea;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(0, 0, 0));
+    -webkit-rtl-ordering: logical;
+    flex-direction: column;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    margin: 10px;
+    font: 400 15px Consolas;
+    opacity: 0.7;
+    border: 1px solid rgb(51, 51, 51);
+    border-image: initial;
+    padding: 8px;
+
+}
+
+input {
+    /* -webkit-writing-mode: horizontal-tb !important; */
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 16px Consolas;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: checkbox;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+} 
+input[type="submit" i] {
+    appearance: push-button;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: pointer;
+    color: -internal-light-dark(black, #ffc952);
+    background-color: #ffc952 !important;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-width: 1px;
+    border-style: outset;
+    border-radius: 8px;
+    border-color: #333 !important;
+    border-image: initial;
+    margin-left: 40px;
+    cursor: pointer;
+    font-family: "Consolas";
+}
+
+input[type="submit" i]:hover{
+    background-color: #333 !important;
+    color: #ffc952 !important;
+    text-decoration: underline !important;
+}
+
+.uni-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  
+}
+.left-col {
+    width: 30%;
+    height: 100%;
+    background-color: #f79ac8;
+    float: left;
+}
+
+.right-col {
+    width: 70%;
+    height: 100%;
+    background-color: #22b7ca;
+    float: left;
+}

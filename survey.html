@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/Style/style.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./Style/survey.css"
+      media="screen"
+    />
+  </head>
+  <body>
+    <div class="foreground">
+      <div class="uni-background">
+        <div class="left-col"></div>
+        <div class="right-col"></div>
+      </div>
+      <section class="header">
+        <h1>The Cities We Want</h1>
+        <br>
+        </section>
+      <div class="form-field">
+        <form class="commute">
+          <ol class="survey-list">
+            <p><span class="title">📋 Get involved and help us shape the future of The city 📋</span></p>
+          <br>
+          <br>
+          
+            <li><label for="multi-choice-1">How do you commute to work/school?</label></li>
+          <br>
+            <input type="radio" id="walk" name="walk" value="walk" />
+          <label for="walk">Walking as a good chance to exercise!</label><br />
+          <input type="radio" id="bike" name="bike" value="bike" />
+          <label for="bike">Cycling is the best</label><br />
+          <input type="radio" id="drive" name="drive" value="drive" />
+          <label for="drive">I drive a car</label><br />
+          <input type="radio" id="public" name="public" value="public" />
+          <label for="public"
+            >Public transportation takes me to everywhere!</label
+          >
+        </form>
+        <br>
+        <br>
+        <form class="rent">
+          <li><label for="rent-budget"
+            >How much would you spend on rent per month in Berlin?</label></li>
+          <br />
+          <select name="rent-budget" id="rent-budget">
+            <option value=">1500">more than 1500</option>
+            <option value="1000-1500">1000-1500</option>
+            <option value="750-1000">750-1000</option>
+            <option value="500-750" selected="selected">500-750</option>
+            <option value="less500">less than 500</option>
+          </select>
+        </form>
+        <br />
+        <form class="factors">
+          <li><label for="factors"
+            >What factors are important to you when renting or buying an flat in
+            the city?</label></li>
+          <br />
+          <input
+            type="checkbox"
+            id="factors1"
+            name="factors1"
+            value="Location"
+          />
+          <label for="factors1">Location</label><br />
+          <input
+            type="checkbox"
+            id="factors2"
+            name="factors2"
+            value="Neighborhood"
+          />
+          <label for="factors2">Neighborhood</label><br />
+          <input
+            type="checkbox"
+            id="factors3"
+            name="factors3"
+            value="Convenience"
+          />
+          <label for="factors3">Convenience</label><br />
+          <input type="checkbox" id="factors4" name="factors4" value="Price" />
+          <label for="factors4">Rental price</label><br />
+          <input type="checkbox" id="factors5" name="factors5" value="other" />
+          <label for="factors5">Other, please specify...</label>
+          <br/>
+          <textarea name="other" style="width: 330px; height: 100px">
+Please elaborate...</textarea>
+          <br>
+          <br>
+        </form>
+
+        <form action="/questionnaire.html">
+          <li><label for="free-text-1"
+            >What is your ideal way of living in a city?</label></li>
+        
+          <textarea name="message" style="width: 330px; height: 100px">
+Give us an idea... 
+            </textarea
+          >
+          <br/>
+          <br>
+          <li><label for="free-text-2">What makes you like your city most?</label></li>
+          
+          <textarea name="message" style="width: 330px; height: 100px">
+Some input text...
+          </textarea>
+        </ol>
+        </form>
+        <br />
+        <input
+          type="submit" onclick="alert('🎉🎉Thank you for your answers!🥳')" id="Survey-submit"
+          value="Submit"
+        />
+      </div>
+    </div>
+  </body>
+</html>
